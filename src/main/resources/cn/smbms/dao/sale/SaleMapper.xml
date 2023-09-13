@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.smbms.dao.sale.SaleMapper">
+    <select id="getSaleList" resultType="cn.smbms.pojo.Sale">
+        select * from sale
+    </select>
+
+    <select id="getSaleCount" resultType="java.lang.Integer">
+        SELECT COUNT(1) AS count FROM sale s
+        <where>
+            <if test="saleName != null and saleName != ''">
+                AND s.name LIKE CONCAT('%', #{saleName}, '%')
+            </if>
+            <if test="saleCategory != null and saleCategory != ''">
+                AND s.category LIKE CONCAT('%', #{saleCategory}, '%')
+            </if>
+        </where>
+    </select>
+</mapper>
