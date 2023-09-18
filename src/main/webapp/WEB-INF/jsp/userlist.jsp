@@ -21,6 +21,7 @@
 						   </c:forEach>
 						</c:if>
 	        		</select>
+
 					 <input type="hidden" name="pageIndex" value="1"/>
 					 <input	value="查 询" type="submit" id="searchbutton">
 					 <a href="${pageContext.request.contextPath}/sys/user/add.html" >添加用户</a>

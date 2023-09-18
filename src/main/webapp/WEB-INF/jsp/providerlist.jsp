@@ -60,6 +60,8 @@
 				</tr>
 			</c:forEach>
         </table>
+
+
 			<input type="hidden" id="totalPageCount" value="${totalPageCount}"/>
 		  	<c:import url="rollpage.jsp">
 	          	<c:param name="totalCount" value="${totalCount}"/>

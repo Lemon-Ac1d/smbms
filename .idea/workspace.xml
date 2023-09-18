@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1c98100-d225-42d7-8a26-42a48203a3bf" name="变更" comment="变更" />
+    <list default="true" id="e1c98100-d225-42d7-8a26-42a48203a3bf" name="变更" comment="目前还算完好，">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/saleadd.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/salemodify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/statics/js/saleadd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/smbms/controller/SaleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/smbms/controller/SaleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/smbms/dao/sale/SaleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/smbms/dao/sale/SaleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/smbms/pojo/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/smbms/pojo/Sale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/smbms/service/sale/SaleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/smbms/service/sale/SaleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/smbms/service/sale/SaleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/smbms/service/sale/SaleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/smbms/tools/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/smbms/tools/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/smbms/dao/sale/SaleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/smbms/dao/sale/SaleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/providerlist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/providerlist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/salelist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/salelist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userlist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userlist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/css/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +51,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2LhwqIG4BBzkSpfoD1qpFwXvp1m" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -136,7 +156,11 @@
       <workItem from="1694476568002" duration="10794000" />
       <workItem from="1694563825118" duration="3193000" />
       <workItem from="1694567080553" duration="6390000" />
-      <workItem from="1694599697444" duration="1016000" />
+      <workItem from="1694599697444" duration="4433000" />
+      <workItem from="1694858437521" duration="18861000" />
+      <workItem from="1694942885077" duration="4662000" />
+      <workItem from="1694948238519" duration="355000" />
+      <workItem from="1695049134151" duration="48000" />
     </task>
     <servers />
   </component>
@@ -153,5 +177,25 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="目前还算完好，" />
+    <option name="LAST_COMMIT_MESSAGE" value="目前还算完好，" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cn/smbms/controller/ProviderController.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cn/smbms/service/sale/SaleServiceImpl.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -238,6 +238,11 @@ input[type='reset']:active, input[type='reset']:focus, .providerView a:hover, .p
     margin: 20px;
 }
 
+.saleAdd {
+    border: 1px solid #9ac70f;
+    padding: 20px;
+    margin: 20px;
+}
 .providerAdd form {
 
 }
@@ -299,6 +304,12 @@ input[type='reset']:active, input[type='reset']:focus, .providerView a:hover, .p
     margin-left: 240px;
     padding-top: 20px;
 }
+
+.addAddBtn {
+    margin-left: 240px;
+    padding-top: 20px;
+}
+
 
 .providerAddBtn a ,
 .providerAddBtn input[type='submit'],

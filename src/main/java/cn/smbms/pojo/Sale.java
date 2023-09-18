@@ -8,6 +8,8 @@ public class Sale {
     private String category;
     private BigDecimal price; //单价
 
+    private  String king;
+
     public Integer getId() {
         return id;
     }
@@ -40,14 +42,11 @@ public class Sale {
         this.price = price;
     }
 
-    public Integer getQuantity() {
-        return quantity;
+    public String getKing() {
+        return king;
     }
 
-    public void setQuantity(Integer quantity) {
-        this.quantity = quantity;
+    public void setKing(String king) {
+        this.king = king;
     }
-
-    private Integer quantity;
-
 }

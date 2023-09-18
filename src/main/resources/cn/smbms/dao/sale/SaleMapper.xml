@@ -4,18 +4,51 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.smbms.dao.sale.SaleMapper">
     <select id="getSaleList" resultType="cn.smbms.pojo.Sale">
-        select * from sale
+
+        SELECT * FROM sale s
+        WHERE
+        <if test="name != null">
+            s.name LIKE CONCAT('%', #{name}, '%')
+        </if>
+        <if test="category != null">
+            and s.category LIKE CONCAT('%', #{category}, '%')
+        </if>
+        <if test="king != null">
+            and s.king LIKE CONCAT('%', #{king}, '%')
+        </if>
+        limit #{from}, #{pageSize}
     </select>
 
-    <select id="getSaleCount" resultType="java.lang.Integer">
-        SELECT COUNT(1) AS count FROM sale s
-        <where>
-            <if test="saleName != null and saleName != ''">
-                AND s.name LIKE CONCAT('%', #{saleName}, '%')
-            </if>
-            <if test="saleCategory != null and saleCategory != ''">
-                AND s.category LIKE CONCAT('%', #{saleCategory}, '%')
-            </if>
-        </where>
+    <select id="getSaleCount" resultType="Int">
+        select count(1) as count from sale s WHERE
+        <if test="name != null">
+            s.name LIKE CONCAT('%', #{name}, '%')
+        </if>
+        <if test="category != null">
+            and s.category LIKE CONCAT('%', #{category}, '%')
+        </if>
+        <if test="king != null">
+            and s.king LIKE CONCAT('%', #{king}, '%')
+        </if>
     </select>
+
+    <select id="insert" parameterType="Sale">
+        insert into sale (name,category,price,king)
+        values (#{name},#{category},#{price},#{king})
+    </select>
+
+    <select id="getSaleById" resultType="Sale" parameterType="String">
+        select * from sale where id = #{id}
+    </select>
+
+    <update id="update" parameterType="Sale">
+        update sale set id =#{id},name=#{name},category=#{category},price=#{price},king =#{king}
+        where id=#{id}
+    </update>
+
+    <delete id="delete" parameterType="string">
+        delete from sale where id = #{id}
+    </delete>
+
+
 </mapper>
